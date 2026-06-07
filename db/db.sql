@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS cursos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    carga_horaria INTEGER NOT NULL,
+    descricao TEXT
+);

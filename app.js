@@ -4,6 +4,10 @@ import { cursosRouter } from './routes/cursos.js'
 
 const app = express();
 
+app.get("/", (req, res) => {
+  res.status(200).send("Online!")
+})
+
 app.use(express.json());
 app.use(cursosRouter)
 export { app };
